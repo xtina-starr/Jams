@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script href="demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+
+    <style>
+      #jams {
+        text-align: center;
+      }
+
+      .track {
+        margin-bottom: 10px;
+      }
+
+      .filters {
+        text-align: center;
+      }
+
+      li {
+        text-decoration: none;
+        display: inline;
+      }
+
+      .filters button {
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      .filters button:hover {
+        color: white;
+        background-color: black;
+      }      
+    </style>
+  </head>
+  <body>
+    <div class="filters">
+      <h1>Jams</h1>
+
+      <p>Genre:</p>
+      <ul>
+        <li><button id="jazz" value="jazz">Jazz</button></li>
+        <li><button id="rock" value="rock">Rock</button></li>
+        <li><button id="soul" value="soul">Soul</button></li>
+        <li><button id="rb" value="rb">Rhythm and Blues</button></li>
+        <li><button id="folk" value="folk">Folk</button></li>
+        <li><button id="blues" value="blues">Blues</button></li>
+        <li><button id="dance" value="dance">Dance</button></li>
+        <li><button id="pop" value="pop">Pop</button></li>
+        <li><button id="funk" value="funk">Funk</button></li>
+        <li><button id="alternative" value="alternative">Alternative</button></li>
+        <li><button id="all" value="all">All</button></li>
+      </ul>
+    </div>
+    <div id="jams" class="row">
+  </div>
+  <script>
+    $(document).ready(function() {
+      var $jazzButton = $('#jazz'),
+          $rockButton = $('#rock'),
+          $soulButton = $('#soul'),
+          $rbButton = $('#rb'),
+          $folkButton = $('#folk'),
+          $bluesButton = $('#blues'),
+          $danceButton = $('#dance'),
+          $popButton = $('#pop'),
+          $funkButton = $('#funk'),
+          $alternativeButton = $('#alternative');
+
+      if ($('#jams')) {
+        $.ajax({
+          type: "GET",
+          dataType: "json",
+          url: "tracks.json",
+          success: function(data) {
+            $.each(data, function(i,item) {
+              var text = '<b>Title</b>: ' + item.title + '<br />';
+              text += '<b>Artist</b>: ' + item.artist + '<br />';
+              text += '<b>Genre</b>: ' + item.genre + '<br />';
+              text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+              text += '<b>Likes</b>: ' + item.likes + '<br />';
+              text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+              $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+            });
+          }
+        }); 
+      }
+
+      $('button').on('click', function(e) {
+        var buttonClicked = this.value;
+        $.ajax({
+          type: "GET",
+          dataType: "json",
+          url: "tracks.json",
+          success: function(data) {
+            switch (buttonClicked) {
+              case "jazz":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "Jazz"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+                console.log(result, buttonClicked);
+              case "rock":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "Rock"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "soul":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "Soul"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "rb":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "R&B"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "folk":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "Folk"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "blues":
+                $('#jams').html('');
+              var result = _.where(data, {genre: "Blues"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "dance":
+                $('#jams').html('');
+                var result = _.where(data, {genre: "Dance"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "pop":
+                $('#jams').html('');
+               var result = _.where(data, {genre: "Pop"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "funk":
+              $('#jams').html('');
+                var result = _.where(data, {genre: "Funk"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "alternative":
+              $('#jams').html('');
+                var result = _.where(data, {genre: "Alternative"});
+                $.each(result, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              case "all":
+                $('#jams').html('');
+                $.each(data, function(i,item) {
+                  var text = '<b>Title</b>: ' + item.title + '<br />';
+                  text += '<b>Artist</b>: ' + item.artist + '<br />';
+                  text += '<b>Genre</b>: ' + item.genre + '<br />';
+                  text += '<b>Link</b>: <a href="'+ item.link + '">Youtube Video</a></div><br />';
+                  text += '<b>Likes</b>: ' + item.likes + '<br />';
+                  text += '<div id="pic"><img src="'+ item.image + '" /></div>';
+                  $('<div class="track col-sm-4"></div>').html(text).appendTo('#jams');
+                });
+                break;
+              default:
+                console.log(data)
+                alert('There was an error!');
+                $('<div class="track col-sm-4"></div>').html("There was an error").appendTo('#jams');
+                break;
+            }
+            
+          }
+        });
+      });
+    });
+    
+  </script>
+  </body>
+</html>
