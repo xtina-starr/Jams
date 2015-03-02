@@ -2,181 +2,239 @@
    {
       "title": "Tomorrow Is My Turn",
       "artist": "Nina Simone (Charles Aznavour)",
+      "genre": "Jazz",
       "image": "http://static03.thisismyjam.com/i/eb4e1f9be150fb1c94aacefd69a1738f_185.jpg?1424693784",
       "likes": 35
    },
    {
       "title": "Virginia Avenue",
       "artist": "Tom Waits",
+      "genre": "Jazz",
       "image": "http://static01.thisismyjam.com/i/e741e8e5582365ade1176105ab645bc3_185.jpg?1424671043",
       "likes": 85
    },
    {
       "title": "Into the Nada",
       "artist": "Karl Blau",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=xMmduOsGDeU",
       "image": "http://static02.thisismyjam.com/i/4e2788e6f5a0ea39f45800195f3e8ab6_185.jpg?1424674240",
       "likes": 49
    },
    {
       "title": "The Man Who Sold The World",
       "artist": "David Bowie",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=HSH--SJKVQQ",
       "image": "http://static04.thisismyjam.com/i/5a935bdd319f631fa743b05ef60c83be_185.jpg?1424281220",
       "likes": 102
    },
    {
       "title": "Be Thankful For What You Got",
       "artist": "Love",
+      "genre": "Soul",
+      "link": "https://www.youtube.com/watch?v=vjFw0AKvYjA",
       "image": "http://static03.thisismyjam.com/i/fba8f75e9e335c95ea931c55436d0398_185.jpg?1424717648",
       "likes": 40
    },
    {
       "title": "Rock 'n' Roll Train",
       "artist": "Charles Sheffield",
+      "genre": "R&B",
+      "link": "https://www.youtube.com/watch?v=XYV_vbE0PxI",
       "image": "http://static01.thisismyjam.com/i/1855dc21d9739f4c8c6b1fa833fed612_185.jpg?1424710677",
       "likes": 43
    },
    {
       "title": "Let's Get Drunk Again",
       "artist": "Bo Carter",
+      "genre": "Blues",
+      "link": "https://www.youtube.com/watch?v=oLWd7E0ITlE",
       "image": "http://static03.thisismyjam.com/i/fecca35bddcb0217ed014e176a85956e_185.jpg?1424683726",
       "likes": 49
    },
    {
       "title": "Saturday Sun",
       "artist": "Nick Drake",
+      "genre": "Folk",
+      "link": "https://www.youtube.com/watch?v=aXLWH2IAEN0",
       "image": "http://static01.thisismyjam.com/i/08e58117fcb09dce0baecb0e6f540885_185.jpg?1424544162",
       "likes": 82
    },
    {
       "title": "Dancing With Mr. D",
       "artist": "The Rolling Stones",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=9hw1SKn5eFM",
       "image": "http://static02.thisismyjam.com/i/11ceeab789946347f72ffb29f2d19b36_185.jpg?1424660424",
       "likes": 60
    },
    {
       "title": "Kitch You're So Sweet",
       "artist": "Lord Kitchener",
+      "genre": "",
+      "link": "https://www.youtube.com/watch?v=fFDvvQB_bnA",
       "image": "http://static04.thisismyjam.com/i/9a93c94934fb28f789d1fde6cb006143_185.jpg?1424705805",
       "likes": 39
    },
    {
       "title": "Porcelain",
       "artist": "Moby",
+      "genre": "Dance",
+      "link": "https://www.youtube.com/watch?v=IJWlBfo5Oj0",
       "image": "http://static02.thisismyjam.com/i/2a7282bc5592baf0f24c695a6df23e69_185.jpg?1424625666",
       "likes": 52
    },
    {
       "title": "What Difference Does It Make?",
       "artist": "The Smiths",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=XbOx8TyvUmI",
       "image": "http://static01.thisismyjam.com/i/5ce097ad8fd0dcadd64512d5e42d7734_185.png?1424677781",
       "likes": 94
    },
    {
       "title": "Don't Look Back in Anger",
       "artist": "Oasis",
+      "genre": "Pop",
+      "link": "https://www.youtube.com/watch?v=r8OipmKFDeM",
       "image": "http://static01.thisismyjam.com/i/a0e7782de3a80b91a05cf3bb7b60b0cc_185.jpg?1424508963",
       "likes": 67
    },
    {
       "title": "Gimme Some Lovin'",
       "artist": "The Spencer Davis Group",
+      "genre": "Pop",
+      "link": "https://www.youtube.com/watch?v=Iv6Q-v-94Lo",
       "image": "http://static01.thisismyjam.com/i/3ce6db97711033d3f50641db87d94d82_185.jpg?1424639359",
       "likes": 59
    },
    {
       "title": "I Feel Good (different Version)",
       "artist": "James Brown",
+      "genre": "Funk",
+      "link": "https://www.youtube.com/watch?v=U5TqIdff_DQ",
       "image": "http://static01.thisismyjam.com/i/b5dc933f0a90bc5c933a24d242c2e304_185.jpg?1424695690",
       "likes": 60
    },
    {
       "title": "Walking in My Shoes",
       "artist": "Depeche Mode",
+      "genre": "Alternative",
+      "link": "https://www.youtube.com/watch?v=GrC_yuzO-Ss",
       "image": "http://static03.thisismyjam.com/i/f538acc676971af2ef4ef973e3f86875_185.jpg?1424611448",
       "likes": 51
    },
    {
       "title": "The Killing Moon",
       "artist": "Echo & the Bunnymen",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=LWz0JC7afNQ",
       "image": "http://static03.thisismyjam.com/i/509da6fe21983cd16b749d4758fcbaa2_185.jpg?1424619190",
       "likes": 69
    },
    {
       "title": "Joy to the World",
       "artist": "Three Dog Night",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=yf-d-Ka30EY",
       "image": "http://static03.thisismyjam.com/i/66cab5000eb6bdaaf2d67460dad88af3_185.jpg?1424695512",
       "likes": 35
    },
    {
       "title": "I've Got The Love",
       "artist": "Rupert's People",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=Zhhn8Nn5dV4",
       "image": "http://static03.thisismyjam.com/i/6d131baa8adb9280a0d47bef3ebb3752_185.jpg?1424686964",
       "likes": 40
    },
    {
       "title": "Feelings (Montreux Jazz Festival)",
       "artist": "Nina Simone",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=mH5ZE3N8cxU",
       "image": "http://static02.thisismyjam.com/i/366490db280c695519f92acd40efec98_185.jpg?1424524512",
       "likes": 62
    },
    {
       "title": "Glow VI",
       "artist": "Danny Clay",
+      "genre": "",
+      "link": "",
       "image": "http://static04.thisismyjam.com/i/66d4ead941fb8585f6a0f976755101e5_185.jpg?1424578275",
       "likes": 55
    },
    {
       "title": "Primrose Green",
       "artist": "Ryley Walker",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=96qBM4LL2ps",
       "image": "http://static03.thisismyjam.com/i/71cf640bc98ee1a73f1c55434e792c0c_185.jpg?1424578392",
       "likes": 52
    },
    {
       "title": "Sunshine, Lollipops And Rainbows",
       "artist": "Lesley Gore",
+      "genre": "Pop",
+      "link": "https://www.youtube.com/watch?v=XQmBXEZEYtg",
       "image": "http://static03.thisismyjam.com/i/987a9635dc842e6fdf1e34090a9d7ea7_185.jpg?1424469241",
       "likes": 56
    },
    {
       "title": "Whirring",
       "artist": "The Joy Formidable",
+      "genre": "Alternative",
+      "link": "https://www.youtube.com/watch?v=a2BUEzdjfpY",
       "image": "http://static03.thisismyjam.com/i/af6f7fff32ef4497f66cf0d02fecdfd9_185.jpg?1424615322",
       "likes": 34
    },
    {
       "title": "Rock & Roll, Hoochie Koo",
       "artist": "Rick Derringer",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=deM14SdTqNE",
       "image": "http://static04.thisismyjam.com/i/44183b5ec013715e4401540f2cccdd7c_185.jpg?1424506475",
       "likes": 60
    },
    {
       "title": "Wish you were here - live unplugged",
       "artist": "David Gilmour",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=3j8mr-gcgoI",
       "image": "http://static02.thisismyjam.com/i/fc8b5cb74362d18aef85574a86265d54_185.jpg?1424332674",
       "likes": 91
    },
    {
       "title": "(Now and Then There's) A Fool Such as I",
       "artist": "Hank Snow",
+      "genre": "Country",
+      "link": "https://www.youtube.com/watch?v=qtJz_Wm-gG0",
       "image": "http://static02.thisismyjam.com/i/222b55c52331153736fa389031e8fb39_185.jpg?1424662225",
       "likes": 37
    },
    {
       "title": "This is Radio Clash",
       "artist": "The Clash",
+      "genre": "Funk",
+      "link": "https://www.youtube.com/watch?v=77EAvs4dq0k",
       "image": "http://static03.thisismyjam.com/i/c543ab5ea2e80003b32b44a3daaa6efe_185.jpg?1424489745",
       "likes": 69
    },
    {
       "title": "Marie & Joe",
       "artist": "Doctors Of Madness",
+      "genre": "Rock",
+      "link": "https://www.youtube.com/watch?v=RWhbnOBIpgY",
       "image": "http://static01.thisismyjam.com/i/3bb5719c929bed2cea5c0b47a9c641d8_185.jpg?1424629886",
       "likes": 41
    },
    {
       "title": "Becky",
       "artist": "All Girl Summer Fun Band",
+      "genre": "Alternative",
+      "link": "https://www.youtube.com/watch?v=RM7u5562fs8",
       "image": "http://static01.thisismyjam.com/i/719084c9ad54430d5e9b36e543bc5831_185.jpg?1424724937",
       "likes": 16
    }
-] ///////////////////////////////////////////////////
+]
